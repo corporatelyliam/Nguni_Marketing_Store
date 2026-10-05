@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Nguni Marketing</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>Windhoek · Swakopmund · Walvis Bay · Oshakati · nationwide OOH coverage</span>
+  <span>nguninamibia@gmail.com &nbsp;|&nbsp; +264 81 300 1748</span>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><img src="images/logo.png" alt="Nguni Marketing logo"><div>NGUNI<span class="sub">Marketing</span></div></div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <span id="accountNavSlot"></span>
+    </nav>
+    <div class="header-actions"><button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button></div>
+  </div>
+</header>
+
+<div class="store-wrap" style="max-width:820px;">
+  <div class="store-header"><h1>Checkout</h1></div>
+  <div id="alertBox"></div>
+
+  <div class="panel">
+    <h2>Order summary</h2>
+    <div id="summaryItems"></div>
+    <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:13.5px;"><span>Subtotal</span><span id="summarySubtotal">N$0.00</span></div>
+    <div style="display:flex;justify-content:space-between;font-size:13.5px;"><span>Delivery</span><span id="summaryFee">N$0.00</span></div>
+    <div class="subtotal-row total" style="display:flex;justify-content:space-between;margin-top:6px;">
+      <span>Total</span><span id="summaryTotal">N$0.00</span>
+    </div>
+    <p id="deliveryNote" style="font-size:12px;color:var(--muted,#6b6b6b);margin-top:6px;"></p>
+  </div>
+
+  <div class="panel">
+    <h2>Delivery</h2>
+    <div class="form-group">
+      <label for="deliveryMethod">Delivery method</label>
+      <select id="deliveryMethod">
+        <option value="collection" id="collectionOption">Collect from our Windhoek office</option>
+        <option value="delivery" id="deliveryOption">Delivery</option>
+      </select>
+    </div>
+    <div id="addressBlock" style="display:none;">
+      <div class="form-group">
+        <label for="addressSelect">Delivery address</label>
+        <select id="addressSelect"></select>
+      </div>
+      <details style="margin-bottom:12px;">
+        <summary style="cursor:pointer;font-size:13px;font-weight:700;color:var(--rust-dark);">+ Add a new address</summary>
+        <div style="margin-top:12px;">
+          <div class="form-group"><label for="newLabel">Label</label><input id="newLabel" value="Main"></div>
+          <div class="form-group"><label for="newLine1">Address line 1</label><input id="newLine1"></div>
+          <div class="form-group"><label for="newLine2">Address line 2 (optional)</label><input id="newLine2"></div>
+          <div class="form-row">
+            <div class="form-group"><label for="newTown">Town</label><input id="newTown"></div>
+            <div class="form-group"><label for="newRegion">Region</label><input id="newRegion"></div>
+          </div>
+          <button type="button" class="btn-ghost btn-sm" id="saveAddressBtn" style="border-color:var(--line);color:var(--charcoal);">Save address</button>
+        </div>
+      </details>
+    </div>
+    <div class="form-group">
+      <label for="notes">Order notes (optional)</label>
+      <textarea id="notes" rows="3" maxlength="500"></textarea>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Payment</h2>
+    <div class="alert alert-info">This store does not accept card payments. After placing your order you'll receive bank details and a payment reference for an EFT. Verification is done manually by our finance team and may take some time.</div>
+    <label style="display:flex;gap:10px;align-items:flex-start;font-size:13px;">
+      <input type="checkbox" id="acceptTerms" style="margin-top:3px;">
+      <span>I agree to the <a href="terms.html" target="_blank">Terms &amp; Conditions</a>, including that this order is held for a limited time pending EFT payment.</span>
+    </label>
+  </div>
+
+  <button class="btn-primary" id="placeOrderBtn" style="width:100%;">Place order</button>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="logo" style="color:#fff;"><img src="images/logo.png" alt="Nguni Marketing logo"><div>NGUNI <span class="sub" style="color:#D8CBAF;">Marketing</span></div></div></div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth-guard.js"></script>
+<script src="js/cart.js"></script>
+<script src="/js/pages/checkout.js"></script>
+</body>
+</html>

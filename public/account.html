@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My account — Nguni Marketing</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>Windhoek · Swakopmund · Walvis Bay · Oshakati · nationwide OOH coverage</span>
+  <span>nguninamibia@gmail.com &nbsp;|&nbsp; +264 81 300 1748</span>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><img src="images/logo.png" alt="Nguni Marketing logo"><div>NGUNI<span class="sub">Marketing</span></div></div>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="quote.html">Request a quote</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-ghost" style="padding:10px 16px;font-size:13px;" id="logoutBtn">Log out</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<div class="store-wrap">
+  <div class="store-header"><h1>My account</h1><span id="welcomeMsg"></span>
+    <span style="display:flex;gap:8px;flex-wrap:wrap;"><a class="btn-outline btn-sm" href="support.html">Support</a><a class="btn-outline btn-sm" href="quote.html">Request a quote</a><a class="btn-outline btn-sm" id="dashLink" href="#" style="display:none;">Staff dashboard</a></span></div>
+  <div id="alertBox"></div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="orders">Orders</button>
+    <button class="tab-btn" data-tab="quotes">Quotes</button>
+    <button class="tab-btn" data-tab="favourites">Favourites</button>
+    <button class="tab-btn" data-tab="addresses">Addresses</button>
+    <button class="tab-btn" data-tab="profile">Profile</button>
+  </div>
+
+  <div class="tab-panel active" id="tab-orders">
+    <div class="panel"><div id="ordersList">Loading…</div></div>
+  </div>
+
+  <div class="tab-panel" id="tab-quotes">
+    <div class="panel"><div id="quotesList">Loading…</div></div>
+  </div>
+
+  <div class="tab-panel" id="tab-favourites">
+    <div class="panel"><div id="favouritesList">Loading…</div></div>
+  </div>
+
+  <div class="tab-panel" id="tab-addresses">
+    <div class="panel"><div id="addressesList">Loading…</div></div>
+  </div>
+
+  <div class="tab-panel" id="tab-profile">
+    <div class="panel">
+      <h2>Profile</h2>
+      <form id="profileForm">
+        <div class="form-group"><label for="fullName">Full name</label><input id="fullName" required minlength="2" maxlength="120"></div>
+        <div class="form-row">
+          <div class="form-group"><label for="phone">Phone</label><input id="phone" maxlength="30"></div>
+          <div class="form-group"><label for="company">Company</label><input id="company" maxlength="120"></div>
+        </div>
+        <button type="submit" class="btn-primary">Save changes</button>
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Change password</h2>
+      <form id="passwordForm">
+        <div class="form-group"><label for="curPw">Current password</label><input type="password" id="curPw" required autocomplete="current-password"></div>
+        <div class="form-group"><label for="newPw">New password (min 8 characters)</label><input type="password" id="newPw" required minlength="8" maxlength="72" autocomplete="new-password"></div>
+        <button type="submit" class="btn-primary">Change password</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div><div class="logo" style="color:#fff;"><img src="images/logo.png" alt="Nguni Marketing logo"><div>NGUNI <span class="sub" style="color:#D8CBAF;">Marketing</span></div></div></div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script src="js/api.js"></script>
+<script src="js/auth-guard.js"></script>
+<script src="js/cart.js"></script>
+<script src="/js/pages/account.js"></script>
+</body>
+</html>

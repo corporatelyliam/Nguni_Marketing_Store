@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D5B5"/>
+      <stop offset="100%" stop-color="#D8CBAF"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#g)"/>
+  <rect x="14" y="14" width="872" height="672" fill="none" stroke="#B5502D" stroke-width="4" stroke-dasharray="14 10" rx="10"/>
+  <g transform="translate(450.0,294.0)">
+    <circle cx="0" cy="0" r="63.0" fill="#ffffff" opacity="0.6"/>
+    <text x="0" y="24.255000000000003" font-family="Arial, sans-serif" font-size="69.30000000000001" text-anchor="middle" fill="#B5502D">&#128247;</text>
+  </g>
+  <text x="450.0" y="420.0" font-family="Arial, sans-serif" font-size="31.5" font-weight="bold" text-anchor="middle" fill="#211F1D">OFFICE / TEAM PHOTO</text>
+  <text x="450.0" y="451.185" font-family="Arial, sans-serif" font-size="17.325000000000003" text-anchor="middle" fill="#6b6660">Replace this file: office-photo.svg</text>
+  <text x="450.0" y="482.37" font-family="Arial, sans-serif" font-size="17.325000000000003" text-anchor="middle" fill="#6b6660">Recommended size: 900x700px</text>
+</svg>

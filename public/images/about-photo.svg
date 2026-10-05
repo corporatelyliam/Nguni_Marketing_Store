@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" width="900" height="900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D5B5"/>
+      <stop offset="100%" stop-color="#D8CBAF"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#g)"/>
+  <rect x="14" y="14" width="872" height="872" fill="none" stroke="#B5502D" stroke-width="4" stroke-dasharray="14 10" rx="10"/>
+  <g transform="translate(450.0,378.0)">
+    <circle cx="0" cy="0" r="81.0" fill="#ffffff" opacity="0.6"/>
+    <text x="0" y="31.185000000000002" font-family="Arial, sans-serif" font-size="89.10000000000001" text-anchor="middle" fill="#B5502D">&#128247;</text>
+  </g>
+  <text x="450.0" y="540.0" font-family="Arial, sans-serif" font-size="40.5" font-weight="bold" text-anchor="middle" fill="#211F1D">ABOUT US PHOTO</text>
+  <text x="450.0" y="580.095" font-family="Arial, sans-serif" font-size="22.275000000000002" text-anchor="middle" fill="#6b6660">Replace this file: about-photo.svg</text>
+  <text x="450.0" y="620.19" font-family="Arial, sans-serif" font-size="22.275000000000002" text-anchor="middle" fill="#6b6660">Recommended size: 900x900px</text>
+</svg>

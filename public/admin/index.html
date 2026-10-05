@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Nguni Marketing</title>
+<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo"><img src="../images/logo.png" alt="Nguni Marketing logo"><div>NGUNI<span class="sub">Marketing</span></div></div>
+    <nav class="main-nav">
+      <a href="../account.html">My account</a>
+      <span class="role-badge">Admin</span>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-ghost" style="padding:10px 16px;font-size:13px;" id="logoutBtn">Log out</button>
+    </div>
+  </div>
+</header>
+
+<div class="store-wrap">
+  <div class="store-header"><h1>Admin</h1><span id="welcomeMsg"></span></div>
+  <div id="alertBox"></div>
+  <div class="tabs" id="tabBar"></div>
+  <div id="panels"></div>
+</div>
+
+<script src="../js/api.js"></script>
+<script src="../js/auth-guard.js"></script>
+<script src="../js/panels.js"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

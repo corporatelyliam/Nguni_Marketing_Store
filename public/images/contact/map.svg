@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8D5B5"/>
+      <stop offset="100%" stop-color="#D8CBAF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#g)"/>
+  <rect x="14" y="14" width="1172" height="372" fill="none" stroke="#B5502D" stroke-width="4" stroke-dasharray="14 10" rx="10"/>
+  <g transform="translate(600.0,168.0)">
+    <circle cx="0" cy="0" r="36.0" fill="#ffffff" opacity="0.6"/>
+    <text x="0" y="13.86" font-family="Arial, sans-serif" font-size="39.6" text-anchor="middle" fill="#B5502D">&#128247;</text>
+  </g>
+  <text x="600.0" y="240.0" font-family="Arial, sans-serif" font-size="18.0" font-weight="bold" text-anchor="middle" fill="#211F1D">MAP OR LOCATION PHOTO</text>
+  <text x="600.0" y="257.82" font-family="Arial, sans-serif" font-size="9.9" text-anchor="middle" fill="#6b6660">Replace this file: map.svg</text>
+  <text x="600.0" y="275.64" font-family="Arial, sans-serif" font-size="9.9" text-anchor="middle" fill="#6b6660">Recommended size: 1200x400px</text>
+</svg>
